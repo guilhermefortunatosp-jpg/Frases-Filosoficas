@@ -1,0 +1,212 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Site com Cartões</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #0b2341;
+            color: white;
+        }
+
+        header {
+            padding: 30px;
+            text-align: center;
+            background-color: #081b33;
+        }
+
+        nav {
+            padding: 15px;
+            text-align: center;
+            background-color: #102f55;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+        }
+
+        main {
+            padding: 40px;
+        }
+
+        .cartoes {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        #cartao1 {
+          background-color: #0B00D6;
+          color: #F9E900
+        }
+
+        #cartao2 {
+          color: #FF70D4;
+          background-color: #080450
+        }
+
+        #cartao3 {
+          color: #3B389B;
+          background-color: #91D11A
+        }
+
+        #cartao4 {
+          color: #FF0000;
+          background-color: #FFF200
+        }
+
+        #cartao5 {
+          background-color: #FFF200;
+          color: #0004FF
+        }
+
+        #cartao6{
+          background-color: #6600FF;
+          color: #5AF400
+        }
+
+        #cartao7 {
+          background-color: #3C2AFF;
+          color: #FF8400
+        }
+
+        #cartao8 {
+          background-color: #062C94;
+          color: #6EF9AA
+        }
+
+        .cartao {
+            background-color: white;
+            color: black;
+            padding: 20px;
+            border-radius: 8px;
+            min-height: 160px;
+        }
+
+        footer {
+            margin-top: 40px;
+            padding: 20px;
+            text-align: center;
+            background-color: #081b33;
+        }
+
+        /* Quando a tela ficar menor, organiza em 2 colunas */
+        @media (max-width: 850px) {
+            .cartoes {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>Meu Site</h1>
+        <p>Exemplo de página semântica com cartões</p>
+    </header>
+
+    <nav>
+        <a href="#">Início</a>
+        <a href="#">Sobre</a>
+        <a href="#">Contato</a>
+    </nav>
+
+    <main>
+        <div class="cartoes">
+
+            <div class="cartao" id="cartao1">
+                <h2>Diógenes</h2>
+                <p>
+                    "Qual o melhor momento para o jantar? Se alguém é rico, quando quiser; se é pobre, quando puder."
+                    <br> <br> <br>
+                    Razão de Contraste: 8.40
+                </p>
+            </div>
+
+            <div class="cartao" id="cartao2">
+                <h2>C. S. Lewis</h2>
+                <p>
+                    "Deus não vai tirar minhas lutas, mas irá me capacitar"
+                    <br> <br> <br>
+                    Razão de Contraste: 7.45
+                </p>
+            </div>
+
+            <div class="cartao" id="cartao3">
+                <h2>Imamnuel Kant</h2>
+                <p>
+                    "O ser humano é uma finalidade em si mesmo."
+                    <br> <br> <br>
+                    Razão de Contraste: 5.10
+                </p>
+            </div>
+
+            <div class="cartao" id="cartao4">
+                <h2>Aristóteles</h2>
+                <p>
+                    “Nós somos o que fazemos repetidamente. A excelência, portanto, não é um ato, mas um hábito.”
+                    <br> <br> <br>
+                    Razão de Contraste: 3.42
+                </p>
+            </div>
+
+            <div class="cartao" id="cartao5">
+                <h2>Sócrates</h2>
+                <p>
+                    "Existe apenas um bem, o saber, e apenas um mal, a ignorância."
+                    <br> <br> <br>
+                    Razão de Contraste: 7.29
+                </p>
+            </div>
+
+            <div class="cartao" id="cartao6">
+                <h2>Descartes</h2>
+                <p>
+                    "Não existem métodos fáceis para resolver problemas difíceis"
+                    <br> <br> <br>
+                    Razão de Contraste: 4.78
+                </p>
+            </div>
+
+            <div class="cartao" id="cartao7">
+                <h2>David Hume</h2>
+                <p>
+                     "Um homem sábio, portanto, ajusta sua crença à evidência."
+                    <br> <br> <br>
+                    Razão de Contraste: 2.88
+                </p>
+            </div>
+
+            <div class="cartao" id="cartao8">
+                <h2>João</h2>
+                <p>
+                    "A graça do Senhor Jesus seja com todos. Amém."
+                    <br> <br> <br>
+                    Razão de Contraste: 8.80
+                </p>
+            </div>
+
+        </div>
+    </main>
+
+    <footer>
+        <p>© 2026 - Meu Site</p>
+    </footer>
+
+</body>
+</html>
